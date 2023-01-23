@@ -23,12 +23,12 @@ def sort(data):
         for x in range(0,len(array),2):
             temp=array.get(x)
             temp2=array.get(x+1)
-            templen=len(temp)
-            temp2len=len(temp2)
+            if not temp2==None:
+                templen=len(temp)
+                temp2len=len(temp2)
             i=0
             j=0
             buffer=""
-            print("data", temp,temp2)
             exittheloop2=False
             while exittheloop2==False and not temp2==None:
                 if i>=templen and j>=temp2len:
@@ -60,7 +60,7 @@ def sort(data):
             del array2[x]
         if len(array)==1:
             exittheloop=True
-    print(array)
+    return array[0]
 
-data="9876543210986754"
-sort(data)
+data="9876543210abccowabunga98675444444444444444444444444444444444444444444444444444444444444444444444334142314321234321342321484848"
+print(sort(data))
