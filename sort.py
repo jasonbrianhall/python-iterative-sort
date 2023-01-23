@@ -1,5 +1,3 @@
-convert the following code to javascript in html
-
 def sort(data):
 
     array={}
