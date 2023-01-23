@@ -1,12 +1,4 @@
-'''
-
-76543210
-67 45 23 01
-45 67 01 23
-01 23 45 67
-
-'''
-
+convert the following code to javascript in html
 
 def sort(data):
 
@@ -47,17 +39,10 @@ def sort(data):
                     j+=1
             array2[counter]=buffer
             counter+=1
-        data=[]
-        for x in array:
-            data.append(x)
-        for x in data:
-            del array[x]
+        del array
         array=array2.copy()
-        data=[]
-        for x in array2:
-            data.append(x)
-        for x in data:
-            del array2[x]
+        del array2
+        array2={}
         if len(array)==1:
             exittheloop=True
     return array[0]
